@@ -1,0 +1,68 @@
+body {
+    background-color: #27C4B6;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#main {
+    position: absolute;
+    top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    left: 350px;
+    background-color: #3D3C3E;
+    border-radius: 50px;
+}
+
+#main-heading{
+    width: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-heading h1 {
+    border-left: #27C4B6 4px solid;
+    padding: 0px;
+    animation: mymove 2s infinite;
+    
+}
+
+#form-div {
+    width: 40%;
+    position: relative;
+    padding: 10px;
+    
+    
+}
+
+#form-div input {
+    margin: 24px;
+    width: 60%;
+    border-style: none;
+    border-bottom: #27C4B6 2px solid;
+    background-color: #3D3C3E;
+}
+#btn {
+    background-color:#27C4B6;
+    font-size: 1rem;
+    border-radius: 5px;
+    
+}
+@keyframes mymove {
+    0% {
+        transition: all ease-out;
+        transform: scale(1);
+    }
+    50% {
+        transition: all ease-out;
+        transform: scale(1.2);
+    }
+    100% {
+        transition: all ease-in-out;
+        transform: scale(1);
+    }
+}
